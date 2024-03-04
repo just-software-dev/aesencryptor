@@ -24,7 +24,6 @@
 		9333DBC62B73EF0200C45A0A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333DBC52B73EF0200C45A0A /* WebView.swift */; };
 		9333DBC82B7403F200C45A0A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9333DBC72B7403F200C45A0A /* Localizable.xcstrings */; };
 		93A4BC8F2A64881E00901317 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 93A4BC8E2A64881E00901317 /* Swinject */; };
-		93A4BC942A648A2200901317 /* SharedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4BC932A648A2200901317 /* SharedAssembly.swift */; };
 		93A4BC982A6493FF00901317 /* RootCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4BC972A6493FF00901317 /* RootCoordinatorFactory.swift */; };
 		93A4BC9B2A64950800901317 /* MenuFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4BC9A2A64950800901317 /* MenuFactory.swift */; };
 		93A4BC9D2A64AC4E00901317 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4BC9C2A64AC4E00901317 /* CustomError.swift */; };
@@ -59,7 +58,6 @@
 		9333DBC32B73E42A00C45A0A /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		9333DBC52B73EF0200C45A0A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		9333DBC72B7403F200C45A0A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		93A4BC932A648A2200901317 /* SharedAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAssembly.swift; sourceTree = "<group>"; };
 		93A4BC972A6493FF00901317 /* RootCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinatorFactory.swift; sourceTree = "<group>"; };
 		93A4BC9A2A64950800901317 /* MenuFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFactory.swift; sourceTree = "<group>"; };
 		93A4BC9C2A64AC4E00901317 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
@@ -138,14 +136,6 @@
 				9333DBC32B73E42A00C45A0A /* AppContainer.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		93A4BC922A648A0300901317 /* AppLayer */ = {
-			isa = PBXGroup;
-			children = (
-				93A4BC932A648A2200901317 /* SharedAssembly.swift */,
-			);
-			path = AppLayer;
 			sourceTree = "<group>";
 		};
 		93A4BC952A64938100901317 /* ViewLayer */ = {
@@ -273,7 +263,6 @@
 				93EBC60C2A61F31700641EE8 /* CommonLayer */,
 				930FFD3A2A636C2300B03743 /* ServiceLayer */,
 				930FFD452A6370CD00B03743 /* ViewLayer */,
-				93A4BC922A648A0300901317 /* AppLayer */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -397,7 +386,6 @@
 				930FFD432A636F2300B03743 /* RootCoordinatorItem.swift in Sources */,
 				930FFD472A6370EF00B03743 /* TextScreenView.swift in Sources */,
 				930FFD3F2A636EC300B03743 /* RootCoordinatorView.swift in Sources */,
-				93A4BC942A648A2200901317 /* SharedAssembly.swift in Sources */,
 				93A4BC982A6493FF00901317 /* RootCoordinatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
