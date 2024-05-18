@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Axis.Set {
-    static var all = Axis.Set([.vertical, .horizontal])
+    static var all: Axis.Set { .init([.vertical, .horizontal]) }
 }
 
 extension View {

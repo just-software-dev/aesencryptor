@@ -7,18 +7,17 @@
 
 import SwiftUI
 
-@MainActor
 final class RootCoordinatorItemsFactory: ObservableObject {
-    let menu: () -> AnyView
-    let about: () -> AnyView
-    let text: (String) -> AnyView
-    let web: (URL) -> AnyView
+    let menu: @MainActor () -> AnyView
+    let about: @MainActor () -> AnyView
+    let text: @MainActor (String) -> AnyView
+    let web: @MainActor (URL) -> AnyView
     
     nonisolated init(
-        menu: @escaping () -> AnyView,
-        about: @escaping () -> AnyView,
-        text: @escaping (String) -> AnyView,
-        web: @escaping (URL) -> AnyView
+        menu: @escaping @MainActor () -> AnyView,
+        about: @escaping @MainActor () -> AnyView,
+        text: @escaping @MainActor (String) -> AnyView,
+        web: @escaping @MainActor (URL) -> AnyView
     ) {
         self.menu = menu
         self.about = about

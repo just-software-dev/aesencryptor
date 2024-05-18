@@ -15,7 +15,7 @@ struct RootCoordinatorView: View {
         NavigationStack(path: $viewModel.state) {
             makeItemView(item: .menu).navigationDestination(
                 for: RootCoordinatorItem.self,
-                destination: makeItemView
+                destination: { makeItemView(item: $0) }
             )
         }.navigationViewStyle(.stack)
     }

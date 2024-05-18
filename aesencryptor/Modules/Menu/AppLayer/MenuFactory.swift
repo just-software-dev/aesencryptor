@@ -16,6 +16,7 @@ struct MenuFactory {
         self.parent = parent
     }
     
+    @MainActor
     func makeView() -> some View {
         let assembler = Assembler(assemblies, parent: parent)
         let viewModel = { assembler.resolver.resolve(MenuViewModel.self)! }
