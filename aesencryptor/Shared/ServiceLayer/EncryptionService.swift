@@ -8,7 +8,7 @@
 import RNCryptor
 import Foundation
 
-final class EncryptionService {
+struct EncryptionService {
     func encrypt(text: String, password: String) throws -> String {
         try checkIsNotEmpty(text: text, password: password)
         
