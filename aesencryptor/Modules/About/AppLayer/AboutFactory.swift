@@ -24,8 +24,8 @@ struct AboutFactory {
     }
 }
 
-private struct AboutAssembly: Assembly {
-    func assemble(container: Container) {
+private struct AboutAssembly: MainThreadAssembly {
+    func assembleOnMainThread(container: Container) {
         container.register(AboutViewModel.self) {
             AboutViewModel(router: $0.resolve(AnyRouter<RootCoordinatorItem>.self)!)
         }.inObjectScope(.transient)

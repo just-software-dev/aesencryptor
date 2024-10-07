@@ -24,8 +24,8 @@ struct MenuFactory {
     }
 }
 
-private struct MenuAssembly: Assembly {
-    func assemble(container: Container) {
+private struct MenuAssembly: MainThreadAssembly {
+    func assembleOnMainThread(container: Container) {
         container.register(MenuViewModel.self) {
             MenuViewModel(
                 encryptionService: $0.resolve(EncryptionService.self)!,

@@ -13,9 +13,9 @@ final class AboutViewModel: ObservableObject {
     
     private let router: AnyRouter<RootCoordinatorItem>
     
-    nonisolated init(router: AnyRouter<RootCoordinatorItem>) {
+    init(router: AnyRouter<RootCoordinatorItem>) {
         self.router = router
-        Task { @MainActor in setup() }
+        setup()
     }
     
     func openEncryptionCorePage() {

@@ -25,6 +25,9 @@
 		9333DBC42B73E42A00C45A0A /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333DBC32B73E42A00C45A0A /* AppContainer.swift */; };
 		9333DBC62B73EF0200C45A0A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333DBC52B73EF0200C45A0A /* WebView.swift */; };
 		9333DBC82B7403F200C45A0A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9333DBC72B7403F200C45A0A /* Localizable.xcstrings */; };
+		93A2A85A2CB4453700DBC75E /* Swinject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2A8592CB4453700DBC75E /* Swinject+Extension.swift */; };
+		93A2A85C2CB4480F00DBC75E /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2A85B2CB4480F00DBC75E /* DispatchQueue+Extension.swift */; };
+		93A2A85E2CB4547000DBC75E /* UnsafeSendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2A85D2CB4547000DBC75E /* UnsafeSendable.swift */; };
 		93A4BC8F2A64881E00901317 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 93A4BC8E2A64881E00901317 /* Swinject */; };
 		93A4BC982A6493FF00901317 /* RootCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4BC972A6493FF00901317 /* RootCoordinatorFactory.swift */; };
 		93A4BC9B2A64950800901317 /* MenuFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4BC9A2A64950800901317 /* MenuFactory.swift */; };
@@ -62,6 +65,9 @@
 		9333DBC32B73E42A00C45A0A /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		9333DBC52B73EF0200C45A0A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		9333DBC72B7403F200C45A0A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		93A2A8592CB4453700DBC75E /* Swinject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swinject+Extension.swift"; sourceTree = "<group>"; };
+		93A2A85B2CB4480F00DBC75E /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
+		93A2A85D2CB4547000DBC75E /* UnsafeSendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsafeSendable.swift; sourceTree = "<group>"; };
 		93A4BC972A6493FF00901317 /* RootCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinatorFactory.swift; sourceTree = "<group>"; };
 		93A4BC9A2A64950800901317 /* MenuFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFactory.swift; sourceTree = "<group>"; };
 		93A4BC9C2A64AC4E00901317 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
@@ -290,6 +296,9 @@
 				930FFD4C2A637A0600B03743 /* CGSize+Extension.swift */,
 				93A4BC9C2A64AC4E00901317 /* CustomError.swift */,
 				9333DBBB2B73C85F00C45A0A /* Task+Extension.swift */,
+				93A2A85D2CB4547000DBC75E /* UnsafeSendable.swift */,
+				93A2A8592CB4453700DBC75E /* Swinject+Extension.swift */,
+				93A2A85B2CB4480F00DBC75E /* DispatchQueue+Extension.swift */,
 			);
 			path = CommonLayer;
 			sourceTree = "<group>";
@@ -374,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A2A85A2CB4453700DBC75E /* Swinject+Extension.swift in Sources */,
 				930FFD492A63788400B03743 /* Sizes.swift in Sources */,
 				930FFD362A63462A00B03743 /* MenuState.swift in Sources */,
 				930FFD3C2A636C5100B03743 /* EncryptionService.swift in Sources */,
@@ -388,6 +398,7 @@
 				93A4BCB02A64BD1200901317 /* RootCoordinatorItemsFactory.swift in Sources */,
 				931BE5882C7F7B04004FD0BF /* ToastViewModel.swift in Sources */,
 				930FFD342A6345FC00B03743 /* MenuViewModel.swift in Sources */,
+				93A2A85E2CB4547000DBC75E /* UnsafeSendable.swift in Sources */,
 				93A4BCAA2A64BA5800901317 /* AboutViewModel.swift in Sources */,
 				930FFD412A636EE900B03743 /* RootCoordinatorViewModel.swift in Sources */,
 				93A4BCB22A64BEAB00901317 /* AboutState.swift in Sources */,
@@ -402,6 +413,7 @@
 				930FFD432A636F2300B03743 /* RootCoordinatorItem.swift in Sources */,
 				930FFD472A6370EF00B03743 /* TextScreenView.swift in Sources */,
 				930FFD3F2A636EC300B03743 /* RootCoordinatorView.swift in Sources */,
+				93A2A85C2CB4480F00DBC75E /* DispatchQueue+Extension.swift in Sources */,
 				93A4BC982A6493FF00901317 /* RootCoordinatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +482,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -526,6 +539,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -561,7 +575,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -597,7 +611,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -630,8 +644,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RNCryptor/RNCryptor.git";
 			requirement = {
-				kind = exactVersion;
-				version = 5.1.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
 			};
 		};
 		93A4BC8D2A64881E00901317 /* XCRemoteSwiftPackageReference "Swinject" */ = {

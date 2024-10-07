@@ -20,9 +20,9 @@ struct AnyRouter<Item: Hashable> {
     private let _append: @MainActor (Item) -> Void
     private let _removeLast: @MainActor () -> Void
     
-    nonisolated init<R: Router>(_ router: R) where Item == R.Item {
-        _append = router.append
-        _removeLast = router.removeLast
+    init<R: Router>(_ router: R) where Item == R.Item {
+        _append = { router.append($0) }
+        _removeLast = { router.removeLast() }
     }
 }
 
@@ -37,7 +37,7 @@ extension AnyRouter: Router {
 }
 
 extension Router {
-    nonisolated func asAnyRouter() -> AnyRouter<Item> {
+    func asAnyRouter() -> AnyRouter<Item> {
         .init(self)
     }
 }

@@ -21,5 +21,5 @@ final class RootCoordinatorViewModel: ObservableObject, Router {
         state.removeLast()
     }
     
-    nonisolated init() {}
+    init() {}
 }

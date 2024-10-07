@@ -14,7 +14,7 @@ final class MenuViewModel: ObservableObject {
     private let encryptionService: EncryptionService
     private let router: AnyRouter<RootCoordinatorItem>
     
-    nonisolated init(encryptionService: EncryptionService, router: AnyRouter<RootCoordinatorItem>) {
+    init(encryptionService: EncryptionService, router: AnyRouter<RootCoordinatorItem>) {
         self.encryptionService = encryptionService
         self.router = router
     }

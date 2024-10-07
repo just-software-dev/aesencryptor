@@ -13,7 +13,7 @@ final class RootCoordinatorItemsFactory: ObservableObject {
     let text: @MainActor (String) -> AnyView
     let web: @MainActor (URL) -> AnyView
     
-    nonisolated init(
+    init(
         menu: @escaping @MainActor () -> AnyView,
         about: @escaping @MainActor () -> AnyView,
         text: @escaping @MainActor (String) -> AnyView,

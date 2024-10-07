@@ -29,8 +29,8 @@ struct RootCoordinatorFactory {
     }
 }
 
-private struct RootCoordinatorAssembly: Assembly {
-    func assemble(container: Container) {
+private struct RootCoordinatorAssembly: MainThreadAssembly {
+    func assembleOnMainThread(container: Container) {
         container.register(RootCoordinatorViewModel.self) { _ in
             RootCoordinatorViewModel()
         }.inObjectScope(.container)
@@ -41,6 +41,7 @@ private struct RootCoordinatorAssembly: Assembly {
     }
 }
 
+@MainActor
 private func makeItemsFactory(assembler: Assembler) -> RootCoordinatorItemsFactory {
     let menuFactory = MenuFactory(parent: assembler)
     let aboutFactory = AboutFactory(parent: assembler)
